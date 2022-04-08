@@ -1,0 +1,88 @@
+.main_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+        img.back{
+        width:70px;
+        height: auto;
+        position: absolute;
+        right: 5px;
+        top: -5px;
+        z-index: 0;
+    }
+    .card_container{
+        background-color: hsl(235, 46%, 20%);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        z-index: 10000;
+        display: grid;
+
+        .sectionOne{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0em 1.5em;
+            color:white;
+            h1{
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+            img{
+                cursor: pointer;
+            }
+            img:hover{
+                filter: brightness(10);
+                -webkit-filter: brightness(10);
+}
+        }
+        .sectionTwo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color:white;
+            padding: 0 1.5em;
+            h1{
+                font-size: 3rem;
+                font-weight: 100;
+            }
+            span{
+                color: hsl(236, 100%, 87%);
+            }
+
+        }
+
+    }
+    .card_container:hover{
+        background-color: hsl(235, 45%, 61%);
+        cursor: pointer;
+    }
+}
+.main_container.Work{
+    background-color: hsl(15, 100%, 70%);
+}
+.main_container.Play{
+    background-color: hsl(195, 74%, 62%)
+}
+.main_container.Study{
+    background-color: hsl(348, 100%, 68%)
+}
+.main_container.Exercise{
+    background-color: hsl(145, 58%, 55%)
+}
+.main_container.Social{
+    background-color: hsl(264, 64%, 52%)
+}
+.main_container.Self.Care{
+    background-color: hsl(43, 84%, 65%)
+}
